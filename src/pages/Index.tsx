@@ -6,6 +6,17 @@ import AboutSection from '../components/AboutSection';
 import PublicationsSection from '../components/PublicationsSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
+import WorkExperienceSection from '../components/WorkExperienceSection';
+import ResearchLabsSection from '../components/ResearchLabsSection';
+import CollectionsSection from '../components/CollectionsSection';
+import EditorialSection from '../components/EditorialSection';
+import OrganizedEventsSection from '../components/OrganizedEventsSection';
+import PresentationsSection from '../components/PresentationsSection';
+import InternshipsSection from '../components/InternshipsSection';
+import CertificatesSection from '../components/CertificatesSection';
+import SummerSchoolsSection from '../components/SummerSchoolsSection';
+import ReviewActivitiesSection from '../components/ReviewActivitiesSection';
+import WebinarsSection from '../components/WebinarsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -23,9 +34,20 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <WorkExperienceSection />
+      <ResearchLabsSection />
       <PublicationsSection />
+      <CollectionsSection />
+      <EditorialSection />
+      <OrganizedEventsSection />
+      <PresentationsSection />
       <SkillsSection />
       <ProjectsSection />
+      <InternshipsSection />
+      <CertificatesSection />
+      <SummerSchoolsSection />
+      <ReviewActivitiesSection />
+      <WebinarsSection />
       <ContactSection />
       <Footer />
     </div>

@@ -19,9 +19,15 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Work", href: "#work-experience" },
+    { name: "Research", href: "#research-labs" },
     { name: "Publications", href: "#publications" },
-    { name: "Skills", href: "#skills" },
+    { name: "Collections", href: "#collections" },
+    { name: "Editorial", href: "#editorial-experience" },
+    { name: "Events", href: "#organized-events" },
+    { name: "Presentations", href: "#presentations" },
     { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -39,7 +45,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-serif font-bold text-primary">Portfolio</a>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
