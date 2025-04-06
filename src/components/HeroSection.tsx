@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection: React.FC = () => {
   const scrollToAbout = () => {
@@ -13,11 +14,23 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center opacity-5"></div>
       
       <div className="section-container flex flex-col items-center justify-center z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center">
-          Academic <span className="text-primary">Portfolio</span>
+        <div className="mb-8">
+          <Avatar className="h-40 w-40 border-4 border-white shadow-lg">
+            <AvatarImage src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" alt="Sayantan Dutta" />
+            <AvatarFallback>SD</AvatarFallback>
+          </Avatar>
+        </div>
+        
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-center">
+          Sayantan Dutta
         </h1>
+        
+        <p className="text-lg md:text-xl text-primary font-medium mb-6 text-center">
+          Research Scientist & Assistant Professor
+        </p>
+        
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center mb-8">
-          Showcasing research, publications and technical skills in academic excellence
+          Specializing in Natural Language Processing, Machine Learning, and AI Ethics
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mb-12">

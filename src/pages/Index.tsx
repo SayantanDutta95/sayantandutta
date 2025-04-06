@@ -8,7 +8,7 @@ import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import WorkExperienceSection from '../components/WorkExperienceSection';
 import ResearchLabsSection from '../components/ResearchLabsSection';
-import CollectionsSection from '../components/CollectionsSection';
+import CollaborationsSection from '../components/CollaborationsSection';
 import EditorialSection from '../components/EditorialSection';
 import OrganizedEventsSection from '../components/OrganizedEventsSection';
 import PresentationsSection from '../components/PresentationsSection';
@@ -23,7 +23,7 @@ import Footer from '../components/Footer';
 const Index = () => {
   useEffect(() => {
     // Set page title
-    document.title = "Academic Portfolio";
+    document.title = "Dr. Sayantan Dutta - Academic Portfolio";
     
     // Scroll to top on load
     window.scrollTo(0, 0);
@@ -37,17 +37,17 @@ const Index = () => {
       <WorkExperienceSection />
       <ResearchLabsSection />
       <PublicationsSection />
-      <CollectionsSection />
-      <EditorialSection />
-      <OrganizedEventsSection />
-      <PresentationsSection />
-      <SkillsSection />
       <ProjectsSection />
+      <CollaborationsSection />
+      <EditorialSection />
+      <PresentationsSection />
+      <OrganizedEventsSection />
       <InternshipsSection />
-      <CertificatesSection />
       <SummerSchoolsSection />
+      <CertificatesSection />
       <ReviewActivitiesSection />
       <WebinarsSection />
+      <SkillsSection />
       <ContactSection />
       <Footer />
     </div>
