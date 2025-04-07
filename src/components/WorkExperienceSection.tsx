@@ -8,11 +8,36 @@ interface WorkExperience {
   company: string;
   location: string;
   period: string;
-  description: string[];
+  description?: string[];
+  project?: string;
+  supervisor?: string;
 }
 
 const WorkExperienceSection: React.FC = () => {
   const experiences: WorkExperience[] = [
+    {
+      role: "Senior Scientist",
+      company: "Advanced Technology Group, GE HealthCare",
+      location: "Bangalore, India",
+      period: "Nov 2024 - Present",
+      description: []
+    },
+    {
+      role: "Postdoctoral Associate in Quantitative Ultrasound",
+      company: "Weill Cornell Medicine, Department of Radiology",
+      location: "New York, USA",
+      period: "Apr 2023 - Oct 2024",
+      project: "Quantitative acoustic-microscopy and characterization of soft tissue",
+      supervisor: "Dr. Jonathan Mamou"
+    },
+    {
+      role: "Postdoctoral Associate in Ultrasound Imaging",
+      company: "CREATIS Laboratory, University of Lyon",
+      location: "Lyon, France",
+      period: "Feb 2023 - Mar 2023",
+      project: "Restoration and enhancement of echocardiographic images",
+      supervisor: "Prof. Adrian Basarab"
+    },
     {
       role: "Research Scientist",
       company: "Advanced AI Institute",
@@ -69,11 +94,25 @@ const WorkExperienceSection: React.FC = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 space-y-2">
-                  {exp.description.map((item, i) => (
-                    <li key={i} className="text-muted-foreground">{item}</li>
-                  ))}
-                </ul>
+                {exp.project && (
+                  <p className="mb-3 text-muted-foreground">
+                    <span className="font-semibold">Project:</span> {exp.project}
+                  </p>
+                )}
+                
+                {exp.supervisor && (
+                  <p className="text-sm text-gray-500 italic mb-3">
+                    <span className="font-semibold">Supervisor:</span> {exp.supervisor}
+                  </p>
+                )}
+                
+                {exp.description && exp.description.length > 0 && (
+                  <ul className="list-disc pl-5 space-y-2">
+                    {exp.description.map((item, i) => (
+                      <li key={i} className="text-muted-foreground">{item}</li>
+                    ))}
+                  </ul>
+                )}
               </CardContent>
             </Card>
           ))}
