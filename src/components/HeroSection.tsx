@@ -26,11 +26,11 @@ const HeroSection: React.FC = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-primary font-medium mb-6 text-center">
-          Research Scientist & Assistant Professor
+          Senior Scientist & Researcher
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center mb-8">
-          Specializing in Natural Language Processing, Machine Learning, and AI Ethics
+          Specializing in Quantum Algorithms for Image Processing, Signal Denoising, and Medical Imaging
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mb-12">
