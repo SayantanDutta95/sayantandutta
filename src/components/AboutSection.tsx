@@ -6,21 +6,35 @@ const AboutSection: React.FC = () => {
   const education = [
     {
       degree: "Ph.D. in Computer Science",
-      institution: "Stanford University",
-      year: "2018 - 2022",
-      description: "Specialized in Artificial Intelligence and Machine Learning with focus on Natural Language Processing."
+      institution: "Université Toulouse III - Paul Sabatier",
+      year: "Oct 2019 - Jan 2023",
+      description: "Thesis: Novel prospects of image restorations inspired by concepts of quantum mechanics",
+      location: "Toulouse, France",
+      additionalInfo: "Supervisors: Prof. Adrian Basarab and Prof. Denis Kouamé (from Computer Science department), and Prof. Bertrand Georgeot (from Physics department)",
+      link: "https://theses.hal.science/tel-04047862/"
     },
     {
-      degree: "M.S. in Computer Science",
-      institution: "Massachusetts Institute of Technology",
-      year: "2016 - 2018",
-      description: "Focused on algorithms and computational theory."
+      degree: "Master in Fundamental Physics",
+      institution: "Université de Tours",
+      year: "Sep 2018 - Jul 2019",
+      description: "Master's Thesis: Classical signal and image processing methods inspired from quantum mechanics",
+      location: "Tours, France",
+      additionalInfo: "Grade: 16.92/20, Rank: Second"
     },
     {
-      degree: "B.S. in Computer Science",
-      institution: "University of California, Berkeley",
-      year: "2012 - 2016",
-      description: "Double major in Mathematics and Computer Science."
+      degree: "Master in Applied Mathematics",
+      institution: "Visva-Bharati University",
+      year: "Jul 2016 - May 2018",
+      description: "Master's Thesis: Electromagnetic solitary waves in a relativistic pair plasma",
+      location: "Bolpur, India",
+      additionalInfo: "Grade: 9.27/10, Rank: Second"
+    },
+    {
+      degree: "Bachelor in Mathematics",
+      institution: "The University of Burdwan",
+      year: "Jul 2013 - Jun 2016",
+      location: "Burdwan, India",
+      description: ""
     }
   ];
 
@@ -29,7 +43,7 @@ const AboutSection: React.FC = () => {
       <div className="section-container">
         <h2 className="section-title">Academic Background</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {education.map((edu, index) => (
             <div 
               key={index}
@@ -41,9 +55,33 @@ const AboutSection: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-serif font-bold">{edu.degree}</h3>
               </div>
-              <p className="text-primary font-medium mb-2">{edu.institution}</p>
-              <p className="text-sm text-muted-foreground mb-4">{edu.year}</p>
-              <p className="text-gray-700">{edu.description}</p>
+              <div className="mb-4">
+                <p className="text-primary font-medium">{edu.institution}</p>
+                <div className="flex flex-wrap gap-x-4 text-sm text-muted-foreground mt-1">
+                  <span>{edu.year}</span>
+                  <span>{edu.location}</span>
+                </div>
+              </div>
+              
+              {edu.description && (
+                <div className="mb-4">
+                  <p className="text-gray-700">{edu.description}</p>
+                  {edu.link && (
+                    <a 
+                      href={edu.link}
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-primary text-sm hover:underline inline-block mt-1"
+                    >
+                      (arXiv)
+                    </a>
+                  )}
+                </div>
+              )}
+              
+              {edu.additionalInfo && (
+                <p className="text-sm text-gray-500 italic">{edu.additionalInfo}</p>
+              )}
             </div>
           ))}
         </div>
