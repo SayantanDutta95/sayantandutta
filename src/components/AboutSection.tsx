@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, Award, BookOpen } from 'lucide-react';
+import { GraduationCap, BookOpen } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   const education = [
@@ -41,9 +41,20 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="bg-white">
       <div className="section-container">
-        <h2 className="section-title">Academic Background</h2>
+        <h2 className="section-title">About Me</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <div className="mb-10">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            I am Sayantan Dutta, a researcher with a multidisciplinary background in mathematics, physics, and computer science. Currently, I am working as a Senior AI Scientist at GE Healthcare. Previously, I worked as a Postdoctoral Associate at Weill Cornell Medicine, Cornell University, New York, USA. I received my Ph.D. from the Université Paul Sabatier - Toulouse III, France.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            My research interests span computed tomography imaging, quantitative acoustic microscopy, quantum computing, quantum image processing, deep learning, and inverse problems. I have published extensively in prestigious journals and conferences, developed novel image restoration and medical imaging methods inspired by quantum mechanics, and collaborated with leading researchers and institutions. I am passionate about advancing computational imaging and signal processing through innovative approaches.
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-serif font-bold mb-6">Academic Background</h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           {education.map((edu, index) => (
             <div 
               key={index}
@@ -94,8 +105,8 @@ const AboutSection: React.FC = () => {
                 <BookOpen className="text-primary" size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-medium mb-2">Natural Language Processing</h4>
-                <p className="text-gray-700">Focusing on transformer architectures, large language models, and multilingual understanding.</p>
+                <h4 className="text-lg font-medium mb-2">Quantum Imaging</h4>
+                <p className="text-gray-700">Novel image processing algorithms inspired by quantum mechanics concepts.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -103,8 +114,8 @@ const AboutSection: React.FC = () => {
                 <BookOpen className="text-primary" size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-medium mb-2">Machine Learning</h4>
-                <p className="text-gray-700">Researching deep learning techniques, reinforcement learning and transfer learning approaches.</p>
+                <h4 className="text-lg font-medium mb-2">Medical Imaging</h4>
+                <p className="text-gray-700">Advanced techniques for acoustic microscopy and computed tomography imaging.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -112,8 +123,8 @@ const AboutSection: React.FC = () => {
                 <BookOpen className="text-primary" size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-medium mb-2">Computational Linguistics</h4>
-                <p className="text-gray-700">Exploring the intersection of linguistics and computer science for better language understanding.</p>
+                <h4 className="text-lg font-medium mb-2">Deep Learning</h4>
+                <p className="text-gray-700">Physics-inspired neural networks for signal processing and image restoration.</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -121,41 +132,8 @@ const AboutSection: React.FC = () => {
                 <BookOpen className="text-primary" size={20} />
               </div>
               <div>
-                <h4 className="text-lg font-medium mb-2">Artificial Intelligence Ethics</h4>
-                <p className="text-gray-700">Investigating ethical implications and responsible AI development practices.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-serif font-bold mb-6">Academic Achievements</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex items-start">
-              <div className="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                <Award className="text-primary" size={20} />
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-1">Best Paper Award</h4>
-                <p className="text-sm text-muted-foreground">ACL Conference 2022</p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                <Award className="text-primary" size={20} />
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-1">Research Fellowship</h4>
-                <p className="text-sm text-muted-foreground">Google AI 2020-2021</p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <div className="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                <Award className="text-primary" size={20} />
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-1">Academic Excellence</h4>
-                <p className="text-sm text-muted-foreground">Stanford CS Department 2019</p>
+                <h4 className="text-lg font-medium mb-2">Inverse Problems</h4>
+                <p className="text-gray-700">Innovative solutions for denoising, deconvolution, and super-resolution challenges.</p>
               </div>
             </div>
           </div>

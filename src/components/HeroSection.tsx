@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
       <div className="section-container flex flex-col items-center justify-center z-10">
         <div className="mb-8">
           <Avatar className="h-40 w-40 border-4 border-white shadow-lg">
-            <AvatarImage src="/250009500_SayantanDutta_11-06-2024_09_15_33.jpg" alt="Sayantan Dutta" />
+            <AvatarImage src="https://drive.google.com/uc?export=view&id=1vEawYERxTMoAHZxrft5lEGiA-a-kqDTH" alt="Sayantan Dutta" />
             <AvatarFallback>SD</AvatarFallback>
           </Avatar>
         </div>
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-center mb-8">
-          Specializing in Quantum Algorithms for Image Processing, Signal Denoising, and Medical Imaging
+          Specializing in Quantum Algorithms for Image Processing and Medical Imaging
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mb-12">

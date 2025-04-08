@@ -10,7 +10,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://ieeexplore.ieee.org/abstract/document/10704947",
     tags: ["Quantum Denoising", "Resolution Enhancement", "Acoustic Microscopy"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 10, pp. 1489-1504",
+    doi: "10.1109/TCI.2024.3473312"
   },
   {
     title: "DIVA: Deep Unfolded Network from Quantum Interactive Patches for Image Restoration",
@@ -19,7 +21,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://doi.org/10.1016/j.patcog.2024.110676",
     tags: ["Deep Learning", "Quantum", "Image Restoration"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 155, pp. 110676(1-14)",
+    doi: "10.1016/j.patcog.2024.110676"
   },
   {
     title: "Automatic Tuning of Denoising Algorithms Parameters without Ground Truth",
@@ -28,7 +32,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://doi.org/10.1109/LSP.2024.3354554",
     tags: ["Denoising", "Algorithm Parameters", "Signal Processing"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 31, pp. 381-385",
+    doi: "10.1109/LSP.2024.3354554"
   },
   {
     title: "Quantum Algorithm for Signal Denoising",
@@ -37,7 +43,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://doi.org/10.1109/LSP.2023.3344071",
     tags: ["Quantum Algorithm", "Signal Denoising"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 31, pp. 156-160",
+    doi: "10.1109/LSP.2023.3344071"
   },
   {
     title: "A Novel Image Denoising Algorithm Using Concepts of Quantum Many-Body Theory",
@@ -46,7 +54,9 @@ export const publications: Publication[] = [
     year: "2022",
     link: "https://doi.org/10.1016/j.sigpro.2022.108690",
     tags: ["Image Denoising", "Quantum Many-Body Theory"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 201, pp. 108690(1-13)",
+    doi: "10.1016/j.sigpro.2022.108690"
   },
   {
     title: "Plug-and-Play Quantum Adaptive Denoiser for Deconvolving Poisson Noisy Images",
@@ -55,7 +65,9 @@ export const publications: Publication[] = [
     year: "2021",
     link: "https://ieeexplore.ieee.org/abstract/document/9562557",
     tags: ["Quantum Denoiser", "Poisson Noise", "Image Deconvolution"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 9, pp. 139771-139791",
+    doi: "10.1109/ACCESS.2021.3118608"
   },
   {
     title: "Quantum Mechanics-Based Signal and Image Representation: Application to Denoising",
@@ -64,7 +76,9 @@ export const publications: Publication[] = [
     year: "2021",
     link: "https://ieeexplore.ieee.org/document/9382109",
     tags: ["Quantum Mechanics", "Signal Processing", "Image Denoising"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 2, pp. 190-206",
+    doi: "10.1109/OJSP.2021.3067507"
   },
   {
     title: "Large Amplitude Electromagnetic Solitons in a Fully Relativistic Magnetized Electron-Positron-Pair Plasma",
@@ -73,7 +87,9 @@ export const publications: Publication[] = [
     year: "2020",
     link: "https://doi.org/10.1016/j.asr.2020.07.040",
     tags: ["Electromagnetic Solitons", "Electron-Positron-Pair Plasma"],
-    type: "journal"
+    type: "journal",
+    volume: "vol. 66(9), pp. 2265-2273",
+    doi: "10.1016/j.asr.2020.07.040"
   },
   
   // Conference Papers
@@ -84,7 +100,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://ieeexplore.ieee.org/abstract/document/10657709",
     tags: ["Quantum-Inspired", "Denoising", "Medical Imaging"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-1",
+    doi: "10.1109/NSS/MIC/RTSD57108.2024.10657709"
   },
   {
     title: "A Quantum Denoising-Based RED Framework for 250-MHz & 500-MHz Quantitative Acoustic-Microscopy Resolution Enhancement",
@@ -93,7 +111,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://ieeexplore.ieee.org/abstract/document/10635221",
     tags: ["Quantum Denoising", "Acoustic Microscopy", "Resolution Enhancement"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-5",
+    doi: "10.1109/ISBI56570.2024.10635221"
   },
   {
     title: "Unsupervised Physics-Inspired Deep Learning Network with Application to Dental Computed Tomography Image Restoration",
@@ -102,7 +122,9 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://ieeexplore.ieee.org/abstract/document/10635786",
     tags: ["Deep Learning", "CT Image Restoration", "Dental Imaging"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-5",
+    doi: "10.1109/ISBI56570.2024.10635786"
   },
   {
     title: "Biomechanical Properties Change in the Peri-Equatorial Region in Myopic Guinea Pig Sclera: Insights Toward Location of Early Changes During Myopization",
@@ -111,7 +133,8 @@ export const publications: Publication[] = [
     year: "2024",
     link: "https://iovs.arvojournals.org/article.aspx?articleid=2797791",
     tags: ["Biomechanics", "Myopic Guinea Pig", "Ophthalmology"],
-    type: "conference"
+    type: "conference",
+    volume: "vol. 65(7), pp. 3846"
   },
   {
     title: "Biomechanical and microstructural changes in posterior myopic Guinea pig",
@@ -120,7 +143,9 @@ export const publications: Publication[] = [
     year: "2023",
     link: "https://pubs.aip.org/asa/jasa/article/154/4_supplement/A95/2923997/Biomechanical-and-microstructural-changes-in",
     tags: ["Biomechanics", "Myopic Guinea Pig", "Microstructural Analysis"],
-    type: "conference"
+    type: "conference",
+    volume: "vol. 154, pp. A95-A95",
+    doi: "10.1121/10.0022912"
   },
   {
     title: "Computed Tomography Image Restoration Using a Quantum-Based Deep Unrolled Denoiser and a Plug-and-Play Framework",
@@ -129,7 +154,9 @@ export const publications: Publication[] = [
     year: "2023",
     link: "https://ieeexplore.ieee.org/document/10289892",
     tags: ["CT Image Restoration", "Quantum-Based Denoiser", "Plug-and-Play"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 845-849",
+    doi: "10.23919/EUSIPCO58844.2023.10289892"
   },
   {
     title: "Deep Unfolding of Image Denoising by Quantum Interactive Patches",
@@ -138,7 +165,9 @@ export const publications: Publication[] = [
     year: "2022",
     link: "https://ieeexplore.ieee.org/document/9897959",
     tags: ["Deep Unfolding", "Image Denoising", "Quantum Interactive Patches"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 491-495",
+    doi: "10.1109/ICIP46576.2022.9897959"
   },
   {
     title: "Adaptive Contrast Enhancement of Cardiac Ultrasound Images using a Deep Unfolded Many-Body Quantum Algorithm",
@@ -147,7 +176,9 @@ export const publications: Publication[] = [
     year: "2022",
     link: "https://ieeexplore.ieee.org/abstract/document/9958691",
     tags: ["Contrast Enhancement", "Cardiac Ultrasound", "Quantum Algorithm"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-4",
+    doi: "10.1109/IUS54386.2022.9958691"
   },
   {
     title: "Quantum Denoising-Based Super-Resolution Algorithm Applied to Dental Tomography Images",
@@ -156,7 +187,9 @@ export const publications: Publication[] = [
     year: "2022",
     link: "https://ieeexplore.ieee.org/abstract/document/9761623",
     tags: ["Quantum Denoising", "Super-Resolution", "Dental Tomography"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-4",
+    doi: "10.1109/ISBI52829.2022.9761623"
   },
   {
     title: "Image Denoising Inspired by Quantum Many-Body Physics",
@@ -165,7 +198,9 @@ export const publications: Publication[] = [
     year: "2021",
     link: "https://ieeexplore.ieee.org/abstract/document/9506794",
     tags: ["Image Denoising", "Quantum Physics", "Many-Body Physics"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1619-1623",
+    doi: "10.1109/ICIP42928.2021.9506794"
   },
   {
     title: "Poisson Image Deconvolution by a Plug-and-Play Quantum Denoising Scheme",
@@ -174,7 +209,9 @@ export const publications: Publication[] = [
     year: "2021",
     link: "https://ieeexplore.ieee.org/abstract/document/9616253",
     tags: ["Poisson Image Deconvolution", "Plug-and-Play", "Quantum Denoising"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 646-650",
+    doi: "10.23919/EUSIPCO54536.2021.9616253"
   },
   {
     title: "Despeckling Ultrasound Images Using Quantum Many-Body Physics",
@@ -183,7 +220,9 @@ export const publications: Publication[] = [
     year: "2021",
     link: "https://ieeexplore.ieee.org/abstract/document/9593778",
     tags: ["Despeckling", "Ultrasound Images", "Quantum Physics"],
-    type: "conference"
+    type: "conference",
+    volume: "pp. 1-4",
+    doi: "10.1109/IUS52206.2021.9593778"
   },
   
   // Manuscripts under Review

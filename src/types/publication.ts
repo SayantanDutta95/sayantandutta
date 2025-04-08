@@ -7,6 +7,8 @@ export interface Publication {
   link: string;
   tags: string[];
   type: 'journal' | 'conference' | 'preparation';
+  volume?: string;
+  doi?: string;
 }
 
 export interface GoogleScholarMetrics {

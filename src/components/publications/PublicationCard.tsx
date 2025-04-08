@@ -55,6 +55,16 @@ const PublicationCard: React.FC<PublicationCardProps> = ({
           {publication.year}
         </div>
       </div>
+      {publication.volume && (
+        <p className="text-sm text-muted-foreground mb-3">
+          {publication.volume}
+        </p>
+      )}
+      {publication.doi && (
+        <p className="text-sm text-primary mb-3">
+          DOI: {publication.doi}
+        </p>
+      )}
       <Button 
         variant="outline" 
         size="sm"
