@@ -4,14 +4,17 @@ import { ExternalLink, BookOpen, FileText, FileEdit } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { publications } from '@/data/publications';
+import { journalPublications } from '@/data/publications/journal';
+import { conferencePublications } from '@/data/publications/conference';
+import { preparationPublications } from '@/data/publications/preparation';
 import GoogleScholarMetrics from './publications/GoogleScholarMetrics';
 import PublicationsTabContent from './publications/PublicationsTabContent';
 
 const PublicationsSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('journal');
   
-  const journalCount = publications.filter(pub => pub.type === 'journal').length;
-  const conferenceCount = publications.filter(pub => pub.type === 'conference').length;
+  const journalCount = journalPublications.length;
+  const conferenceCount = conferencePublications.length;
   
   return (
     <section id="publications" className="bg-blue-50">
@@ -59,9 +62,9 @@ const PublicationsSection: React.FC = () => {
             </TabsList>
           </div>
           
-          <PublicationsTabContent type="journal" publications={publications} />
-          <PublicationsTabContent type="conference" publications={publications} />
-          <PublicationsTabContent type="preparation" publications={publications} />
+          <PublicationsTabContent type="journal" publications={journalPublications} />
+          <PublicationsTabContent type="conference" publications={conferencePublications} />
+          <PublicationsTabContent type="preparation" publications={preparationPublications} />
         </Tabs>
         
         <div className="flex justify-center mt-12">

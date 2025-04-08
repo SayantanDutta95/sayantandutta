@@ -13,16 +13,16 @@ const PublicationsTabContent: React.FC<PublicationsTabContentProps> = ({
   type, 
   publications 
 }) => {
-  const filteredPublications = publications.filter(pub => pub.type === type);
-  
+  // Since we're now passing in the pre-filtered publications directly,
+  // we don't need to filter them again
   return (
     <TabsContent value={type} className="space-y-8">
-      {filteredPublications.map((pub, index) => (
+      {publications.map((pub, index) => (
         <PublicationCard 
           key={index} 
           publication={pub} 
           index={index} 
-          totalCount={filteredPublications.length}
+          totalCount={publications.length}
         />
       ))}
     </TabsContent>
