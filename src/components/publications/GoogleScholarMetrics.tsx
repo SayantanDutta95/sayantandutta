@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -116,17 +117,17 @@ const GoogleScholarMetrics: React.FC = () => {
   }
   
   return (
-    <div className="flex flex-wrap items-center justify-center gap-6">
-      <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md shadow-sm">
-        <Quote size={18} className="text-primary" />
-        <span>Citations: <span className="font-bold">{scholarMetrics.citations}</span></span>
+    <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-md shadow-sm">
+        <Quote size={20} className="text-primary" />
+        <span className="text-lg">Citations: <span className="font-bold text-xl">{scholarMetrics.citations}</span></span>
       </div>
-      <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-md shadow-sm">
-        <Badge variant="outline" className="text-primary font-bold">h</Badge>
-        <span>h-index: <span className="font-bold">{scholarMetrics.hIndex}</span></span>
+      <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-md shadow-sm">
+        <Badge variant="outline" className="text-primary font-bold text-lg px-3 py-1">h</Badge>
+        <span className="text-lg">h-index: <span className="font-bold text-xl">{scholarMetrics.hIndex}</span></span>
       </div>
       {scholarMetrics.lastUpdated && (
-        <div className="text-xs text-muted-foreground">
+        <div className="text-xs text-muted-foreground mt-2">
           Last updated: {scholarMetrics.lastUpdated}
         </div>
       )}

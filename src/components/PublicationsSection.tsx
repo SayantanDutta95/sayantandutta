@@ -21,40 +21,40 @@ const PublicationsSection: React.FC = () => {
       <div className="section-container">
         <h2 className="section-title">Publications</h2>
         
-        <div className="mb-6 text-center">
-          <p className="text-lg mb-2">
+        <div className="mb-8 text-center">
+          <p className="text-lg mb-4">
             Total: <span className="font-semibold">{journalCount}</span> Journal Papers and <span className="font-semibold">{conferenceCount}</span> Conference Papers
           </p>
           
-          <div className="mt-4">
+          <div className="mt-6">
             <GoogleScholarMetrics />
           </div>
         </div>
         
         <Tabs 
           defaultValue="journal" 
-          className="w-full mt-8"
+          className="w-full mt-10"
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-blue-100 shadow-md border-2 border-blue-200">
+            <TabsList className="grid grid-cols-3 w-full max-w-2xl bg-blue-100 shadow-md border-2 border-blue-200 p-1 gap-2">
               <TabsTrigger 
                 value="journal" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-6 py-3"
               >
                 <BookOpen size={16} />
                 Journal Papers
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-6 py-3"
               >
                 <FileText size={16} />
                 Conference Papers
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-6 py-3"
               >
                 <FileEdit size={16} />
                 In Preparation
