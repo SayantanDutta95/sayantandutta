@@ -7,7 +7,6 @@ import PublicationsSection from '../components/PublicationsSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import WorkExperienceSection from '../components/WorkExperienceSection';
-import ResearchLabsSection from '../components/ResearchLabsSection';
 import CollaborationsSection from '../components/CollaborationsSection';
 import EditorialSection from '../components/EditorialSection';
 import OrganizedEventsSection from '../components/OrganizedEventsSection';
@@ -35,7 +34,6 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <WorkExperienceSection />
-      <ResearchLabsSection />
       <PublicationsSection />
       <ProjectsSection />
       <CollaborationsSection />

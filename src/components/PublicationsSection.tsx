@@ -40,21 +40,21 @@ const PublicationsSection: React.FC = () => {
             <TabsList className="grid grid-cols-3 w-full max-w-md bg-blue-100 shadow-md border-2 border-blue-200">
               <TabsTrigger 
                 value="journal" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
               >
                 <BookOpen size={16} />
                 Journal Papers
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
               >
                 <FileText size={16} />
                 Conference Papers
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium"
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white font-medium px-4 py-3"
               >
                 <FileEdit size={16} />
                 In Preparation

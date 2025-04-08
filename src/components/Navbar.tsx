@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -20,9 +19,7 @@ const Navbar: React.FC = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Work", href: "#work-experience" },
-    { name: "Research", href: "#research-labs" },
     { name: "Publications", href: "#publications" },
-    { name: "Collections", href: "#collections" },
     { name: "Editorial", href: "#editorial-experience" },
     { name: "Events", href: "#organized-events" },
     { name: "Presentations", href: "#presentations" },

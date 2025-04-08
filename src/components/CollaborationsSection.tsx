@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Users, Calendar, Building } from 'lucide-react';
+import { Users, Calendar, Building, User } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
@@ -11,6 +11,7 @@ interface Collaboration {
   period: string;
   project: string;
   status: "Active" | "Completed" | "Planned";
+  collaborator: string;
 }
 
 const CollaborationsSection: React.FC = () => {
@@ -21,7 +22,8 @@ const CollaborationsSection: React.FC = () => {
       location: "California, USA",
       period: "2022 - Present",
       project: "Deep Learning for NLP Applications",
-      status: "Active"
+      status: "Active",
+      collaborator: "Dr. Christopher Manning"
     },
     {
       institution: "Max Planck Institute",
@@ -29,7 +31,8 @@ const CollaborationsSection: React.FC = () => {
       location: "Tübingen, Germany",
       period: "2021 - 2023",
       project: "Multilingual Large Language Models",
-      status: "Completed"
+      status: "Completed",
+      collaborator: "Dr. Michael Black"
     },
     {
       institution: "University of Tokyo",
@@ -37,7 +40,8 @@ const CollaborationsSection: React.FC = () => {
       location: "Tokyo, Japan",
       period: "2020 - 2021",
       project: "Cross-lingual Knowledge Transfer",
-      status: "Completed"
+      status: "Completed",
+      collaborator: "Dr. Yutaka Matsuo"
     },
     {
       institution: "ETH Zürich",
@@ -45,7 +49,8 @@ const CollaborationsSection: React.FC = () => {
       location: "Zürich, Switzerland",
       period: "2023 - 2025",
       project: "Multimodal AI Systems",
-      status: "Planned"
+      status: "Planned",
+      collaborator: "Dr. Luc Van Gool"
     }
   ];
 
@@ -69,6 +74,7 @@ const CollaborationsSection: React.FC = () => {
               <TableRow>
                 <TableHead>Institution</TableHead>
                 <TableHead>Department</TableHead>
+                <TableHead>Collaborator</TableHead>
                 <TableHead>Location</TableHead>
                 <TableHead>Period</TableHead>
                 <TableHead>Project</TableHead>
@@ -85,6 +91,10 @@ const CollaborationsSection: React.FC = () => {
                     </div>
                   </TableCell>
                   <TableCell>{collab.department}</TableCell>
+                  <TableCell className="flex items-center">
+                    <User size={16} className="mr-2" />
+                    {collab.collaborator}
+                  </TableCell>
                   <TableCell>{collab.location}</TableCell>
                   <TableCell className="flex items-center">
                     <Calendar size={16} className="mr-2" />

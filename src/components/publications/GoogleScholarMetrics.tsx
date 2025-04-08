@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -40,15 +39,9 @@ const GoogleScholarMetrics: React.FC = () => {
           }
         }
         
-        // Base data from the provided Google Scholar profile with slight randomization
-        // to simulate dynamic updates (in reality, this would be an API call)
-        const baseCitations = 148;
-        const baseHIndex = 6;
-        
-        // Add small random variations to simulate changes (in a real implementation, 
-        // this would be actual data from the API)
-        const citations = baseCitations + Math.floor(Math.random() * 3);
-        const hIndex = baseHIndex + (Math.random() > 0.9 ? 1 : 0); // Occasionally bump h-index
+        // Updated citation and h-index values as requested
+        const citations = 228;
+        const hIndex = 10;
         
         const metrics = {
           citations,
@@ -66,8 +59,8 @@ const GoogleScholarMetrics: React.FC = () => {
       } catch (error) {
         console.error("Error fetching Google Scholar metrics:", error);
         setScholarMetrics({
-          citations: 148, // Fallback to known values
-          hIndex: 6,
+          citations: 228, // Updated fallback to known values
+          hIndex: 10,
           loading: false,
           error: true
         });
