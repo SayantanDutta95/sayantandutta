@@ -15,10 +15,13 @@ const HeroSection: React.FC = () => {
       
       <div className="section-container flex flex-col items-center justify-center z-10">
         <div className="mb-8">
-          <Avatar className="h-40 w-40 border-4 border-white shadow-lg">
-            <AvatarImage src="https://raw.githubusercontent.com/SayantanDutta95/sayantandutta.github.io/main/images/SauantanDutta.jpg" alt="Sayantan Dutta" />
-            <AvatarFallback>SD</AvatarFallback>
-          </Avatar>
+          <div className="h-48 w-48 md:h-56 md:w-56 rounded-full border-4 border-white shadow-lg overflow-hidden">
+            <img 
+              src="https://raw.githubusercontent.com/SayantanDutta95/sayantandutta.github.io/main/images/SauantanDutta.jpg" 
+              alt="Sayantan Dutta" 
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-center">
