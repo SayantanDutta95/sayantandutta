@@ -17,38 +17,30 @@ interface Webinar {
 const WebinarsSection: React.FC = () => {
   const webinars: Webinar[] = [
     {
-      title: "Recent Advances in Large Language Models",
-      organizer: "AI Research Institute",
-      date: "September 15, 2023",
-      attendees: "1,200+",
-      description: "Discussed the latest developments in large language models, focusing on scaling laws, emergent abilities, and alignment techniques.",
-      recordingLink: "https://example.com/llm-webinar",
-      slidesLink: "https://example.com/llm-slides"
+      title: "Quantum Mechanics-Based Image Processing and Medical Applications",
+      organizer: "Journal of Electronic Imaging (SPIE Webinar)",
+      date: "November 19, 2024",
+      attendees: "200+",
+      description: "This webinar delved into the latest advancements in quantum mechanics-based imaging, with a particular focus on medical applications. It covered current challenges in the field and explored the future potential of these innovative technologies.",
+      recordingLink: "https://www.spiedigitallibrary.org/jei-webinar-quantum-imaging",
+      slidesLink: "https://www.spiedigitallibrary.org/jei-webinar-quantum-imaging"
     },
     {
-      title: "Ethical Considerations in Developing AI Systems",
-      organizer: "Tech Ethics Initiative",
-      date: "May 22, 2023",
-      attendees: "850",
-      description: "Presented frameworks for ethical development of AI systems, with case studies focusing on bias mitigation and transparency.",
-      recordingLink: "https://example.com/ethics-webinar"
+      title: "Exploring Innovative Image Restoration Approaches: A Quantum Mechanics-Inspired Paradigm with Medical Imaging Applications",
+      organizer: "European Association for Signal Processing (EURASIP)",
+      date: "May 15, 2024",
+      attendees: "100+",
+      description: "This presentation introduced frameworks for a quantum mechanics-inspired paradigm in image restoration, emphasizing medical applications. It highlighted current challenges and discussed the future potential of these approaches.",
+      recordingLink: "https://www.youtube.com/watch?v=QIiHoVTRHvE"
     },
     {
-      title: "Cross-lingual Transfer Learning in NLP",
-      organizer: "Global NLP Conference",
-      date: "January 10, 2023",
-      attendees: "600",
-      description: "Explored techniques for transferring knowledge across languages in natural language processing applications.",
-      slidesLink: "https://example.com/crosslingual-slides"
-    },
-    {
-      title: "Multimodal Learning for Scientific Applications",
-      organizer: "Scientific AI Network",
-      date: "October 5, 2022",
-      attendees: "450",
-      description: "Discussed approaches for combining text, image, and structured data in scientific research contexts.",
-      recordingLink: "https://example.com/multimodal-webinar",
-      slidesLink: "https://example.com/multimodal-slides"
+      title: "Novel Prospects of Image Restoration Inspired by Concepts of Quantum Mechanics",
+      organizer: "IEEE Signal Processing Society (SPS)",
+      date: "March 9, 2023",
+      attendees: "500+",
+      description: "This event explored various techniques for quantum mechanics-based imaging and the design of deep-learning models tailored for medical imaging applications. It provided insights into the current state of the field and future directions.",
+      recordingLink: "https://rc.signalprocessingsociety.org/education/webinars/spsweb23008",
+      slidesLink: "https://rc.signalprocessingsociety.org/education/webinars/spsweb23008"
     }
   ];
 

@@ -15,42 +15,11 @@ interface Certificate {
 const CertificatesSection: React.FC = () => {
   const certificates: Certificate[] = [
     {
-      name: "Deep Learning Specialization",
-      issuer: "Coursera (deeplearning.ai)",
-      date: "March 2022",
-      credentialId: "DLSP-123456",
-      credentialLink: "https://example.com/credential/123456",
-      skills: ["Neural Networks", "CNN", "RNN", "Transformers", "TensorFlow"]
-    },
-    {
-      name: "Advanced NLP with TensorFlow",
-      issuer: "Udacity",
-      date: "November 2021",
-      credentialId: "ANLP-789012",
-      credentialLink: "https://example.com/credential/789012",
-      skills: ["TensorFlow", "BERT", "Transfer Learning", "NLP", "Text Classification"]
-    },
-    {
-      name: "Machine Learning Engineering for Production",
-      issuer: "Coursera (deeplearning.ai)",
-      date: "June 2021",
-      credentialId: "MLEP-345678",
-      credentialLink: "https://example.com/credential/345678",
-      skills: ["MLOps", "Model Deployment", "Data Pipeline", "TFX", "Kubernetes"]
-    },
-    {
-      name: "Ethics in AI",
-      issuer: "edX (Harvard University)",
-      date: "February 2021",
-      skills: ["AI Ethics", "Fairness", "Transparency", "Responsible AI"]
-    },
-    {
-      name: "Cloud Computing for Machine Learning",
-      issuer: "Google Cloud Training",
-      date: "September 2020",
-      credentialId: "CCML-901234",
-      credentialLink: "https://example.com/credential/901234",
-      skills: ["GCP", "Cloud ML", "Kubernetes", "Docker", "Vertex AI"]
+      name: "Introduction to Artificial Intelligence with Python",
+      issuer: "Artificial and Natural Intelligence Toulouse Institute (ANITI), Federal University of Toulouse, France",
+      date: "March - May 2021",
+      credentialLink: "https://en.univ-toulouse.fr/node/2377",
+      skills: ["Neural Networks", "Data Pipeline", "CNN", "RNN", "NLP", "PyTorch", "TensorFlow", "AI Ethics"]
     }
   ];
 

@@ -16,27 +16,27 @@ const InternshipsSection: React.FC = () => {
   const internships: Internship[] = [
     {
       role: "Research Intern",
-      company: "Google Research",
-      location: "Mountain View, CA, USA",
-      period: "Summer 2020",
-      description: "Worked on improving BERT-based models for question answering tasks. Implemented novel fine-tuning strategies that improved performance on the SQuAD benchmark by 2.3%.",
-      technologies: ["PyTorch", "TensorFlow", "BERT", "NLP"]
+      company: "Université Paul Sabatier: IRIT & LPT Labs",
+      location: "Toulouse, France",
+      period: "April - July 2019",
+      description: "Developed an adaptive algorithm for medical signal and image denoising. Implemented novel adaptive strategies that significantly improved denoising performance.",
+      technologies: ["Quantum Computing", "Matlab", "Computational Imaging", "Inverse Problems"]
     },
     {
-      role: "AI Research Intern",
-      company: "DeepMind",
-      location: "London, UK",
-      period: "Summer 2019",
-      description: "Researched reinforcement learning algorithms for natural language generation. Developed a novel reward model for generating coherent and engaging dialogue responses.",
-      technologies: ["Python", "PyTorch", "RL", "NLG"]
+      role: "Summer Intern",
+      company: "The University of Burdwan",
+      location: "Bardhaman, West Bengal, India",
+      period: "May - Jun 2017",
+      description: "Conducted a rudimentary study on the mathematical foundation of quantum mechanics.",
+      technologies: ["Quantum Mechanics", "Mathematical Foundation", "Matlab"]
     },
     {
-      role: "NLP Intern",
-      company: "Microsoft Research",
-      location: "Cambridge, UK",
-      period: "Summer 2018",
-      description: "Contributed to improving multilingual capabilities of language models. Created evaluation datasets for 5 low-resource languages and implemented cross-lingual transfer techniques.",
-      technologies: ["Python", "NLTK", "spaCy", "Transformers"]
+      role: "Research Intern",
+      company: "Vivekananda Mahavidyala - Burdwan",
+      location: "Bardhaman, West Bengal, India",
+      period: "July - September 2014",
+      description: "Performed linear instability analysis of a finite amplitude long wave flowing down an inclined plane. Developed a novel mathematical model for stability analysis in laminar flow.",
+      technologies: ["Matlab", "Stability Analysis", "Fluid Mechanics"]
     }
   ];
 
