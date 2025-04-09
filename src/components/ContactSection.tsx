@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="rhiju@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -139,8 +139,8 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-muted-foreground mb-1">Email</h4>
-                  <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">
-                    contact@example.com
+                  <a href="mailto:sayantan.dutta1@gehealthcare.com" className="hover:text-primary transition-colors">
+                    sayantan.dutta1@gehealthcare.com
                   </a>
                 </div>
               </div>
@@ -150,8 +150,8 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-muted-foreground mb-1">Phone</h4>
-                  <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                    +1 (123) 456-7890
+                  <a href="tel:+918116611109" className="hover:text-primary transition-colors">
+                    +91 811 66 11109
                   </a>
                 </div>
               </div>
@@ -161,9 +161,9 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-muted-foreground mb-1">Office</h4>
-                  <p>Computer Science Department<br />
-                  Stanford University<br />
-                  Stanford, CA 94305</p>
+                  <p>Advanced Technology Group<br />
+                  GE HealthCare<br />
+                  Bengaluru, KA 560066, India</p>
                 </div>
               </div>
             </div>

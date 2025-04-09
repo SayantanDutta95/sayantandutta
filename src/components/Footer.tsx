@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-serif font-bold">Academic Portfolio</h3>
-            <p className="text-blue-200 mt-2">Showcasing research and expertise</p>
+            <p className="text-blue-200 mt-2">All Rights Reserved by Sayantan Dutta</p>
           </div>
           
           <div className="flex space-x-4">
             <a 
-              href="https://github.com/username" 
+              href="https://github.com/SayantanDutta95" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 p-2 rounded-full hover:bg-opacity-20 transition-colors"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/username" 
+              href="https://www.linkedin.com/in/sayantan-dutta" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 p-2 rounded-full hover:bg-opacity-20 transition-colors"
@@ -34,16 +34,16 @@ const Footer: React.FC = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="https://twitter.com/username" 
+              href="https://www.instagram.com/sayantan_dutta95" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 p-2 rounded-full hover:bg-opacity-20 transition-colors"
-              aria-label="Twitter Profile"
+              aria-label="Instagram Profile"
             >
-              <Twitter size={20} />
+              <Instagram size={20} />
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:Sayantan.Dutta1@gehealthcare.com" 
               className="bg-white bg-opacity-10 p-2 rounded-full hover:bg-opacity-20 transition-colors"
               aria-label="Email Contact"
             >
