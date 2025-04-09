@@ -16,6 +16,7 @@ import CertificatesSection from '../components/CertificatesSection';
 import SummerSchoolsSection from '../components/SummerSchoolsSection';
 import ReviewActivitiesSection from '../components/ReviewActivitiesSection';
 import WebinarsSection from '../components/WebinarsSection';
+import HobbiesSection from '../components/HobbiesSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -46,6 +47,7 @@ const Index = () => {
       <ReviewActivitiesSection />
       <WebinarsSection />
       <SkillsSection />
+      <HobbiesSection />
       <ContactSection />
       <Footer />
     </div>

@@ -15,30 +15,28 @@ const SkillsSection: React.FC = () => {
       name: "Programming Languages",
       skills: [
         { name: "Python", level: 90 },
-        { name: "Java", level: 85 },
-        { name: "C++", level: 75 },
-        { name: "JavaScript", level: 80 },
-        { name: "R", level: 70 }
+        { name: "Matlab", level: 95 },
+        { name: "C", level: 50 },
+        { name: "Fortran", level: 40 }
       ]
     },
     {
       name: "Machine Learning",
       skills: [
-        { name: "PyTorch", level: 85 },
-        { name: "TensorFlow", level: 80 },
-        { name: "Scikit-learn", level: 90 },
-        { name: "NLP", level: 95 },
-        { name: "Computer Vision", level: 70 }
+        { name: "PyTorch", level: 95 },
+        { name: "TensorFlow", level: 90 },
+        { name: "Computer Vision", level: 90 },
+        { name: "Qiskit", level: 60 }
       ]
     },
     {
-      name: "Web Development",
+      name: "Languages",
       skills: [
-        { name: "React", level: 85 },
-        { name: "Node.js", level: 75 },
-        { name: "HTML/CSS", level: 80 },
-        { name: "TypeScript", level: 85 },
-        { name: "GraphQL", level: 65 }
+        { name: "Bengali", level: 100 },
+        { name: "English", level: 95 },
+        { name: "Hindi", level: 80 },
+        { name: "French", level: 30 },
+        { name: "Sanskrit", level: 20 }
       ]
     }
   ];
@@ -78,9 +76,7 @@ const SkillsSection: React.FC = () => {
           <h3 className="text-2xl font-serif font-bold mb-6 text-center">Additional Skills & Tools</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Git", "Docker", "AWS", "Azure", "SQL", "MongoDB", 
-              "Jupyter", "LaTeX", "MATLAB", "Data Analysis", 
-              "Statistical Modeling", "Kubernetes", "FastAPI", "Flask"
+              "Jupyter", "LaTeX", "Git", "Data Analysis", "Statistical Modeling"
             ].map((skill, index) => (
               <div 
                 key={index}
