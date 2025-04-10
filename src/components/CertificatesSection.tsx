@@ -20,6 +20,27 @@ const CertificatesSection: React.FC = () => {
       date: "March - May 2021",
       credentialLink: "https://en.univ-toulouse.fr/node/2377",
       skills: ["Neural Networks", "Data Pipeline", "CNN", "RNN", "NLP", "PyTorch", "TensorFlow", "AI Ethics"]
+    },
+    {
+      name: "Recent Developments in Quantum Mechanics",
+      issuer: "Université Paul Sabatier, Toulouse III, Toulouse, France",
+      date: "March - June 2022",
+      credentialLink: "https://ed-sdm.univ-toulouse.fr/as/ed/page.pl?site=edsdm&page=presentation",
+      skills: ["Quantum Computing", "Quantum Circuits Design", "Quantum Cryptography"]
+    },
+    {
+      name: "The Statistics of Cosmological Perturbations",
+      issuer: "Institute of Space Astrophysics (IAS), Université Paris-Saclay, Paris, France",
+      date: "May 2021",
+      credentialLink: "https://www.ias.u-psud.fr/fr/formation/enseignements/doctorat/formation-doctorale",
+      skills: ["Cosmological Perturbations", "ΛCDM Model", "Dark Energy and Dark Matter", "Galaxy Formation"]
+    },
+    {
+      name: "Ethics and Scientific Integrity",
+      issuer: "Université Paul Sabatier, Toulouse III, Toulouse, France",
+      date: "February 2021",
+      credentialLink: "https://adum.fr/as/ed/edmitt/page.pl?page=contact",
+      skills: ["Research Integrity", "Ethical Research"]
     }
   ];
 
