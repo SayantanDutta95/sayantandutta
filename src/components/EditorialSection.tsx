@@ -20,7 +20,7 @@ const EditorialSection: React.FC = () => {
       role: "Guest Editor",
       period: "2023 - 2024",
       publisher: "EURASIP",
-      description: "As a Guest Editor, I oversee the review process for submissions focusing on recent advances in Plug-and-Play methods for computational imaging. I led a special issue titled "Recent Advances in Plug-and-Play Methods for Signal, Image and Video Processing: Theory, Algorithms, and Applications."",
+      description: "As a Guest Editor, I oversee the review process for submissions focusing on recent advances in Plug-and-Play methods for computational imaging. I led a special issue titled \"Recent Advances in Plug-and-Play Methods for Signal, Image and Video Processing: Theory, Algorithms, and Applications.\"",
       link: "https://www.springeropen.com/collections/rappm",
       impactFactor: "2.2"
     }

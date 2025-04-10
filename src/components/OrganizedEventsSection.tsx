@@ -21,7 +21,7 @@ const OrganizedEventsSection: React.FC = () => {
       role: "Co-organizer",
       date: "September 4-8, 2023",
       location: "Helsinki, Finland",
-      description: "Co-organized special session on "Plug-and-Play Algorithms for Computational Imaging: Theory and Applications"",
+      description: "Co-organized special session on \"Plug-and-Play Algorithms for Computational Imaging: Theory and Applications\"",
       attendees: "1,000+",
       type: "Conference"
     }   
