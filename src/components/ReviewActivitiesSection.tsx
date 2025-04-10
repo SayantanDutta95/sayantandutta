@@ -14,44 +14,110 @@ interface ReviewActivity {
 const ReviewActivitiesSection: React.FC = () => {
   const reviewActivities: ReviewActivity[] = [
     {
-      conference: "Association for Computational Linguistics (ACL)",
-      role: "Senior Program Committee Member",
-      year: "2023",
-      papersReviewed: 12,
-      specialTracks: ["Machine Translation", "Low-Resource NLP"]
+      conference: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      role: "Reviewer",
+      year: "2024, 2025",
+      papersReviewed: 3,
+      specialTracks: ["Deep Learning", "Transformer"]
     },
     {
-      conference: "Neural Information Processing Systems (NeurIPS)",
+      conference: "IEEE Transactions on Computational Imaging",
+      role: "Reviewer",
+      year: "2024",
+      papersReviewed: 3,
+      specialTracks: ["Unrolled Architecture", "CT Reconstruction"]
+    },
+    {
+      conference: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
       role: "Reviewer",
       year: "2022, 2023",
-      papersReviewed: 8,
-      specialTracks: ["NLP", "Deep Learning Theory"]
+      papersReviewed: 2,
+      specialTracks: ["Tumor Segmentation", "Quantum Evolution Network", "Deep Content-Aware Prior"]
     },
     {
-      conference: "International Conference on Machine Learning (ICML)",
-      role: "Area Chair",
-      year: "2022",
-      papersReviewed: 15,
-      specialTracks: ["Representation Learning"]
-    },
-    {
-      conference: "Empirical Methods in Natural Language Processing (EMNLP)",
+      conference: "IEEE Transactions on Geoscience and Remote Sensing",
       role: "Reviewer",
-      year: "2020, 2021, 2022",
-      papersReviewed: 9
-    },
-    {
-      conference: "Conference on Computer Vision and Pattern Recognition (CVPR)",
-      role: "Reviewer",
-      year: "2021, 2022",
+      year: "2022, 2024",
       papersReviewed: 6,
-      specialTracks: ["Vision and Language"]
+      specialTracks: ["Seismic Signals", "Quantum-Based Signal Representation"]
     },
     {
-      conference: "International Conference on Learning Representations (ICLR)",
+      conference: "IEEE Signal Processing Letters",
       role: "Reviewer",
-      year: "2021, 2022, 2023",
-      papersReviewed: 10
+      year: "2023",
+      papersReviewed: 1,
+      specialTracks: ["Sparse Reconstruction", "Time-Varying Neurodynamic", "Optimization"]
+    },
+    {
+      conference: "IEEE Access",
+      role: "Reviewer",
+      year: "2021, 2024",
+      papersReviewed: 5,
+      specialTracks: ["Attention Mechanism", "Cancer Detection", "Hybrid Framework", "Quantum Denoising", "Quantum Processing for Biomedical Images"]
+    },
+    {
+      conference: "Signal Processing",
+      role: "Reviewer",
+      year: "2023, 2024",
+      papersReviewed: 5,
+      specialTracks: ["Inverse Problems", "Transformer", "CNN"]
+    },
+    {
+      conference: "Digital Signal Processing",
+      role: "Reviewer",
+      year: "2024, 2025",
+      papersReviewed: 6,
+      specialTracks: ["Unsupervised Model", "Residual Network", "Classification", "Time-Signal Data"]
+    },
+    {
+      conference: "Quantum Machine Intelligence",
+      role: "Reviewer",
+      year: "2024",
+      papersReviewed: 1,
+      specialTracks: ["Hybrid Classical-Quantum Computing"]
+    },
+    {
+      conference: "Physics of Plasmas",
+      role: "Reviewer",
+      year: "2023",
+      papersReviewed: 2,
+      specialTracks: ["Plasma Dynamic", "Pair Plasma"]
+    },
+    {
+      conference: "Geophysical Journal International",
+      role: "Reviewer",
+      year: "2022",
+      papersReviewed: 2,
+      specialTracks: ["Seismic Energy Absorption", "Hydrocarbon Detection"]
+    },
+    {
+      conference: "MDPI Journals",
+      role: "Reviewer",
+      year: "2023, 2024, 2025",
+      papersReviewed: 21,
+      specialTracks: ["Journal of Marine Science and Engineering", "Entropy", "Sensors", "Fractal and Fractional",
+    "Applied System Innovation", "Applied Sciences", "Electronics", "Remote Sensing", "Symmetry"]
+    },
+    {
+      conference: "IEEE Int. Conference on Image Processing (ICIP)",
+      role: "Reviewer",
+      year: "2023",
+      papersReviewed: 6,
+      specialTracks: ["Inverse Problems", "Deep Learning", "Medical Imaging"]
+    },
+    {
+      conference: "IEEE Int. Conference on Acoustics, Speech, & Signal Processing (ICASSP)",
+      role: "Reviewer",
+      year: "2024",
+      papersReviewed: 4,
+      specialTracks: ["Image Restoration", "Deep Learning", "Computational Imaging"]
+    },
+    {
+      conference: "European Signal Processing Conference (EUSIPCO)",
+      role: "Reviewer",
+      year: "2023",
+      papersReviewed: 7,
+      specialTracks: ["Plug-and-Play", "Computational Imaging", "CNN"]
     }
   ];
 

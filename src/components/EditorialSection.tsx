@@ -16,31 +16,13 @@ interface EditorialRole {
 const EditorialSection: React.FC = () => {
   const editorialRoles: EditorialRole[] = [
     {
-      journal: "Journal of Artificial Intelligence Research",
-      role: "Associate Editor",
-      period: "2021 - Present",
-      publisher: "AI Access Foundation",
-      description: "Overseeing the review process for submissions in the areas of natural language processing and machine learning.",
-      link: "https://example.com/jair",
-      impactFactor: "4.8"
-    },
-    {
-      journal: "Computational Linguistics",
-      role: "Editorial Board Member",
-      period: "2019 - Present",
-      publisher: "MIT Press",
-      description: "Reviewing papers on linguistic theory, psycholinguistics, and computational models of language processing.",
-      link: "https://example.com/cl",
-      impactFactor: "3.9"
-    },
-    {
-      journal: "Transactions on Machine Learning",
+      journal: "Journal on Image and Video Processing",
       role: "Guest Editor",
-      period: "2022",
-      publisher: "IEEE",
-      description: "Led a special issue on 'Explainable AI for Natural Language Processing' with 15 high-quality papers.",
-      link: "https://example.com/tml",
-      impactFactor: "5.2"
+      period: "2023 - 2024",
+      publisher: "EURASIP",
+      description: "As a Guest Editor, I oversee the review process for submissions focusing on recent advances in Plug-and-Play methods for computational imaging. I led a special issue titled "Recent Advances in Plug-and-Play Methods for Signal, Image and Video Processing: Theory, Algorithms, and Applications."",
+      link: "https://www.springeropen.com/collections/rappm",
+      impactFactor: "2.2"
     }
   ];
 

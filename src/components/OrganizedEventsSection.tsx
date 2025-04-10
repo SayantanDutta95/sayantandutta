@@ -17,41 +17,14 @@ interface Event {
 const OrganizedEventsSection: React.FC = () => {
   const events: Event[] = [
     {
-      name: "International Conference on Artificial Intelligence",
-      role: "Program Chair",
-      date: "June 15-18, 2023",
-      location: "Toronto, Canada",
-      description: "Organized the 15th annual conference with 1,200+ attendees, 300 paper submissions, and 25 invited speakers.",
-      attendees: "1,200+",
+      name: "European Signal Processing Conference (EUSIPCO)",
+      role: "Co-organizer",
+      date: "September 4-8, 2023",
+      location: "Helsinki, Finland",
+      description: "Co-organized special session on "Plug-and-Play Algorithms for Computational Imaging: Theory and Applications"",
+      attendees: "1,000+",
       type: "Conference"
-    },
-    {
-      name: "Workshop on Ethics in NLP",
-      role: "Lead Organizer",
-      date: "March 8-9, 2023",
-      location: "Virtual",
-      description: "Coordinated a two-day workshop focusing on ethical considerations in natural language processing applications.",
-      attendees: "350",
-      type: "Workshop"
-    },
-    {
-      name: "Summer Symposium on Machine Learning",
-      role: "Organizing Committee Member",
-      date: "August 20-22, 2022",
-      location: "Barcelona, Spain",
-      description: "Helped organize a symposium bringing together leading researchers in machine learning and deep neural networks.",
-      attendees: "500",
-      type: "Symposium"
-    },
-    {
-      name: "Research Seminar Series on Language Models",
-      role: "Coordinator",
-      date: "January - May 2022",
-      location: "University of Technology",
-      description: "Organized a weekly seminar series featuring speakers from academia and industry on advances in language models.",
-      attendees: "120 per session",
-      type: "Seminar"
-    }
+    }   
   ];
 
   const getEventTypeColor = (type: string) => {

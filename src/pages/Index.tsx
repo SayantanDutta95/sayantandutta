@@ -19,6 +19,7 @@ import WebinarsSection from '../components/WebinarsSection';
 import HobbiesSection from '../components/HobbiesSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import HonorsSection from '../components/HonorsSection';
 
 const Index = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ const Index = () => {
       <PublicationsSection />
       <ProjectsSection />
       <CollaborationsSection />
+      <HonorsSection />
       <EditorialSection />
       <PresentationsSection />
       <OrganizedEventsSection />
