@@ -19,57 +19,110 @@ interface Presentation {
 const PresentationsSection: React.FC = () => {
   const oralPresentations: Presentation[] = [
     {
-      title: "Transformer-based Models for Low-Resource Languages",
-      event: "ACL 2023",
-      date: "July 12, 2023",
-      location: "Toronto, Canada",
-      description: "Presented research on adapting transformer-based models to low-resource language contexts with minimal training data.",
-      link: "https://example.com/acl-presentation",
-      slidesLink: "https://example.com/slides-toronto"
+      title: "Resolution Enhancement of 250 MHz Quantitative Acoustic Microscopy Using a Quantum Denoising-Based RED Scheme",
+      event: "IEEE International Ultrasonics Symposium (IUS) 2024",
+      date: "September 24, 2024",
+      location: "Taipei, Taiwan",
+      description: "Presented research on quantum-inspired Analytical framework for enhancing resolution in high-frequency acoustic microscopy images."
     },
     {
-      title: "Ethics in Large Language Models",
-      event: "AI Ethics Summit",
-      date: "March 3, 2023",
-      location: "Virtual",
-      description: "Gave a keynote speech on ethical considerations and responsible development of large language models.",
-      link: "https://example.com/ethics-talk",
-      slidesLink: "https://example.com/slides-ethics"
+      title: "Biomechanical Properties Change in the Peri-Equatorial Region in Myopic Guinea Pig Sclera: Insights Toward Location of Early Changes During Myopization",
+      event: "Association for Research in Vision and Ophthalmology (ARVO) 2024",
+      date: "May 7, 2024",
+      location: "Seattle, WA, USA",
+      description: "Shared findings on early biomechanical changes in myopia using high-resolution acoustic microscopy in animal models."
     },
     {
-      title: "Cross-lingual Transfer Learning for NLP",
-      event: "EMNLP 2022",
-      date: "December 10, 2022",
-      location: "Abu Dhabi, UAE",
-      description: "Presented a novel approach to cross-lingual transfer learning that improves performance on low-resource target languages.",
-      slidesLink: "https://example.com/slides-emnlp"
+      title: "Biomechanical and Microstructural Changes in Posterior Myopic Guinea Pig",
+      event: "Acoustics 2023 Conference (Acoustical Society of America)",
+      date: "December 6, 2023",
+      location: "Sydney, Australia",
+      description: "Discussed posterior scleral remodeling in myopia progression through acoustic property analysis."
+    },
+    {
+      title: "Computed Tomography Image Restoration Using a Quantum-Based Deep Unrolled Denoiser and a Plug-and-Play Framework",
+      event: "European Signal Processing Conference (EUSIPCO) 2023",
+      date: "September 6, 2023",
+      location: "Helsinki, Finland",
+      description: "Presented a novel plug-and-play CT image restoration pipeline using quantum-inspired deep unfolding framework.",
+      slidesLink: "https://github.com/SayantanDutta95/presentation_posters/blob/main/EUSIPCO2023_Presentation.pdf"
+    },
+    {
+      title: "Deep Unfolding of Image Denoising by Quantum Interactive Patches",
+      event: "IEEE International Conference on Image Processing (ICIP) 2022",
+      date: "October 18, 2022",
+      location: "Bordeaux, France",
+      description: "Presented a patch-wise denoising framework inspired by quantum many-body interactions within deep unfolding model.",
+      slidesLink: "https://github.com/SayantanDutta95/presentation_posters/blob/main/Presentations__ICIP_2022.pdf"
+    },
+    {
+      title: "Adaptive Contrast Enhancement of Cardiac Ultrasound Images using a Deep Unfolded Many-Body Quantum Algorithm",
+      event: "IEEE International Ultrasonics Symposium (IUS) 2022",
+      date: "October 18, 2022",
+      location: "Venice, Italy",
+      description: "Demonstrated contrast enhancement in cardiac ultrasound using a deep many-body quantum architecture."
+    },
+    {
+      title: "Quantum Denoising-Based Super-Resolution Algorithm Applied to Dental Tomography Images",
+      event: "IEEE International Symposium on Biomedical Imaging (ISBI) 2022",
+      date: "March 30, 2022",
+      location: "Kolkata, India",
+      description: "Showcased a quantum-enhanced super-resolution technique for improving dental tomography imaging.",
+    },
+    {
+      title: "Poisson Image Deconvolution by a Plug-and-Play Quantum Denoising Scheme",
+      event: "European Signal Processing Conference (EUSIPCO) 2021",
+      date: "August 24, 2021",
+      location: "Dublin, Ireland",
+      description: "Presented a plug-and-play framework for Poisson image deconvolution using a quantum-inspired denoiser, tailored for photon-limited imaging scenarios.",
     }
   ];
 
   const posterPresentations: Presentation[] = [
     {
-      title: "Visualizing Attention in Neural Machine Translation",
-      event: "NeurIPS 2023",
-      date: "December 15, 2023",
-      location: "New Orleans, USA",
-      description: "Presented a poster on novel techniques to visualize and interpret attention mechanisms in neural machine translation models.",
-      link: "https://example.com/neurips-poster"
+      title: "Unsupervised Physics-Inspired Deep Learning Network with Application to Dental Computed Tomography Image Restoration",
+      event: "IEEE International Symposium on Biomedical Imaging (ISBI) 2024",
+      date: "May 29, 2024",
+      location: "Athens, Greece",
+      description: "Showcased research on an unsupervised deep learning approach inspired by quantum physics-based priors for dental CT denoising.",
+      link: "https://github.com/SayantanDutta95/presentation_posters/blob/main/ISBI_poster_2024_on_Unsupervised_DIVA_and_CBCT.pdf"
     },
     {
-      title: "Efficient Fine-tuning of Language Models",
-      event: "ICML 2022",
-      date: "July 22, 2022",
-      location: "Baltimore, USA",
-      description: "Showcased research on parameter-efficient fine-tuning methods for large language models.",
-      link: "https://example.com/icml-poster"
+      title: "A Quantum Denoising-Based RED Framework for 250-MHz & 500-MHz Quantitative Acoustic-Microscopy Resolution Enhancement",
+      event: "IEEE International Symposium on Biomedical Imaging (ISBI) 2024",
+      date: "May 28, 2024",
+      location: "Athens, Greece",
+      description: "Displayed a RED-based framework leveraging quantum denoising for enhancing QAM resolution at 250/500 MHz.",
+      link: "https://github.com/SayantanDutta95/presentation_posters/blob/main/ISBI_poster_2024_on_QAM.pdf"
     },
     {
-      title: "Multimodal Learning for Healthcare Applications",
-      event: "ML4H Workshop at NeurIPS",
-      date: "December 8, 2021",
-      location: "Virtual",
-      description: "Presented research on combining text, image, and structured data for healthcare diagnostic applications.",
-      link: "https://example.com/ml4h-poster"
+      title: "Quantum Algorithm for Signal Denoising",
+      event: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2024",
+      date: "April 16, 2024",
+      location: "Seoul, South Korea",
+      description: "Shared a novel quantum denoising algorithm applicable to both classical and quantum signals by leveraging quantum properties.",
+      link: "https://github.com/SayantanDutta95/presentation_posters/blob/main/ICASSP_poster_2024.pdf"
+    },    
+    {
+      title: "Image Denoising Inspired by Quantum Many-Body Physics",
+      event: "IEEE International Conference on Image Processing (ICIP) 2021",
+      date: "September 21, 2021",
+      location: "Anchorage, AK, USA",
+      description: "Proposed a quantum many-body denoising method that enhances image quality in low SNR regimes using principles from quantum interaction theory."
+    },    
+    {
+      title: "Despeckling Ultrasound Images Using Quantum Many-Body Physics",
+      event: "IEEE International Ultrasonics Symposium (IUS) 2021",
+      date: "September 14, 2021",
+      location: "Xi'an, China",
+      description: "Applied quantum interaction models to suppress speckle noise in ultrasound image data."
+    },    
+    {
+      title: "Signal and Image Processing Inspired by Quantum Mechanics: Application to Denoising",
+      event: "Vienna Center for Quantum Science and Technology Summer School 2021",
+      date: "September 9, 2021",
+      location: "Vienna, Austria",
+      description: "Presented a conceptual framework linking quantum mechanics and signal processing for denoising applications."
     }
   ];
 
