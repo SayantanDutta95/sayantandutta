@@ -16,61 +16,40 @@ interface WorkExperience {
 const WorkExperienceSection: React.FC = () => {
   const experiences: WorkExperience[] = [
     {
-      role: "Senior Scientist",
+      role: "Senior AI Scientist",
       company: "Advanced Technology Group, GE HealthCare",
       location: "Bangalore, India",
       period: "Nov 2024 - Present",
-      description: []
-    },
+      description: [
+        "Leading research on cardiac CT image enhancement using deep learning and physics-based models",
+        "Investigating foundational aspects of CT and MR image reconstruction",
+        "Designing simulation frameworks to generate realistic synthetic medical imaging datasets for deep learning",
+        "Developing novel unrolled deep learning architectures exploiting quantum theory for medical image reconstruction"
+      ]
+    },  
     {
-      role: "Postdoctoral Associate in Quantitative Ultrasound",
+      role: "Postdoctoral Associate",
       company: "Weill Cornell Medicine, Department of Radiology",
       location: "New York, USA",
       period: "Apr 2023 - Oct 2024",
-      project: "Quantitative acoustic-microscopy and characterization of soft tissue",
-      supervisor: "Dr. Jonathan Mamou"
+      description: [
+        "Led research in quantitative acoustic microscopy (QAM) for soft tissue characterization",
+        "Developed computational methods for medical image restoration and enhancement",
+        "Performed high-resolution scans of soft-tissue sections from human and animal models",
+        "Conducted statistical analysis of biomechanical and microstructural changes in ocular tissue affected by myopia",     
+        "Designed and implemented novel frameworks to enhance 3D radio-frequency QAM data for improved tissue assessment"
+      ]
     },
     {
-      role: "Postdoctoral Associate in Ultrasound Imaging",
+      role: "Postdoctoral Associate",
       company: "CREATIS Laboratory, University of Lyon",
       location: "Lyon, France",
       period: "Feb 2023 - Mar 2023",
-      project: "Restoration and enhancement of echocardiographic images",
-      supervisor: "Prof. Adrian Basarab"
-    },
-    {
-      role: "Research Scientist",
-      company: "Advanced AI Institute",
-      location: "Cambridge, UK",
-      period: "2021 - Present",
       description: [
-        "Leading research initiatives in natural language processing and machine learning",
-        "Developed and implemented novel transformer-based architectures for multilingual text analysis",
-        "Managed a team of 3 PhD students and collaborated with international research partners"
+        "Led development of physics-informed machine learning models for medical imaging applications",
+        "Designed and implemented novel restoration techniques for echocardiographic image enhancement"
       ]
-    },
-    {
-      role: "Assistant Professor",
-      company: "University of Technology",
-      location: "Boston, USA",
-      period: "2018 - 2021",
-      description: [
-        "Taught undergraduate and graduate courses in Artificial Intelligence and Machine Learning",
-        "Supervised 5 master's theses and 2 PhD dissertations",
-        "Secured $1.2M in research grants from national and international funding bodies"
-      ]
-    },
-    {
-      role: "Postdoctoral Researcher",
-      company: "National Research Laboratory",
-      location: "Berlin, Germany",
-      period: "2016 - 2018",
-      description: [
-        "Conducted research on computational linguistics and sentiment analysis",
-        "Published 7 papers in top-tier conferences and journals",
-        "Developed open-source tools for low-resource language processing"
-      ]
-    }
+    }      
   ];
 
   return (
