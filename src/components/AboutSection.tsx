@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GraduationCap, BookOpen, FileText } from 'lucide-react';
+import { GraduationCap, BookOpen, FileText, Award, BarChart } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -82,23 +82,31 @@ const AboutSection: React.FC = () => {
                         rel="noopener noreferrer" 
                         className="text-primary text-sm hover:underline inline-block mt-1 pl-6"
                       >
-                        View Publication
+                        View arXiv
                       </a>
                     )}
                   </div>
                 )}
                 
                 {(edu.grade || edu.rank) && (
-                  <div className="flex flex-wrap gap-2 mt-3">
+                  <div className="flex flex-wrap gap-4 mt-4 border-t pt-3 border-blue-200">
                     {edu.grade && (
-                      <Badge variant="secondary" className="bg-primary bg-opacity-5 text-primary border border-primary border-opacity-20">
-                        Grade: {edu.grade}
-                      </Badge>
+                      <div className="flex items-center">
+                        <BarChart className="h-4 w-4 text-primary mr-1" />
+                        <span className="text-sm font-medium">Grade:</span>
+                        <span className="ml-1 text-sm bg-primary/10 px-2 py-0.5 rounded text-primary font-semibold">
+                          {edu.grade}
+                        </span>
+                      </div>
                     )}
                     {edu.rank && (
-                      <Badge variant="outline" className="border-primary border-opacity-20">
-                        Rank: {edu.rank}
-                      </Badge>
+                      <div className="flex items-center">
+                        <Award className="h-4 w-4 text-amber-500 mr-1" />
+                        <span className="text-sm font-medium">Rank:</span>
+                        <span className="ml-1 text-sm bg-amber-100 px-2 py-0.5 rounded text-amber-700 font-semibold">
+                          {edu.rank}
+                        </span>
+                      </div>
                     )}
                   </div>
                 )}
