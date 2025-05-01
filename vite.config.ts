@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Update repository name from 'paper-paths-portfolio' to 'sayantandutta'
-  base: mode === 'production' ? '/sayantandutta/' : '/',
+  // For production builds, we don't need a base path prefix since it's at the root domain
+  base: '/',
   plugins: [
     react(),
     mode === 'development' &&
