@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
         <div className="mb-8">
           <div className="h-48 w-48 md:h-56 md:w-56 rounded-full border-4 border-white shadow-lg overflow-hidden">
             <img 
-              src="https://raw.githubusercontent.com/SayantanDutta95/sayantandutta.github.io/main/images/SauantanDutta.jpg" 
+              src="https://github.com/SayantanDutta95/presentation_posters/blob/main/SauantanDutta.jpg" 
               alt="Sayantan Dutta" 
               className="h-full w-full object-cover object-center"
             />

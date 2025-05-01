@@ -35,12 +35,13 @@ const ProjectsSection: React.FC = () => {
       description: "Advancing research in quantitative acoustic microscopy to extract acoustical and mechanical properties of soft tissues at microscopic scales. This project combines regularization by denoising (RED) with the alternating direction method of multipliers (ADMM) for high-resolution 3D radio-frequency ultrasound microscopy image enhancement, facilitating enhanced tissue characterization.",
       image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&h=400&q=80",
       technologies: ["Python", "MATLAB", "Optimization", "Ultrasound Imaging", "Tissue Analysis", "Acoustic Microscopy", "3D Radio Frequency Signal"],
-      githubLink: "https://github.com/SayantanDutta95/RED-ADMM-De-QuIP"
+      githubLink: "https://github.com/SayantanDutta95/RED-ADMM-De-QuIP",
+      liveLink: "https://github.com/SayantanDutta95/presentation_posters/blob/main/QAM_flow.PNG"
     },
     {
       title: "Medical Imaging",
       description: "Pushing the boundaries in medical imaging with advanced techniques aimed at enhancing cardiac ultrasound images for improved diagnostic capabilities. This research also explores innovative methods for reconstruction and restoration in computed tomography (CT) imaging, contributing to enhanced medical diagnostics.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400&q=80",
+      image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&h=400&q=80",
       technologies: ["Python", "MATLAB", "Deep Learning", "3D Enhancement", "Ultrasound Imaging", "Tissue Analysis", "Motion in Medical Image", "CT Reconstruction", "Medical Diagnostics"],
       githubLink: "https://github.com/SayantanDutta95/Cardiac-USimage-Enhancement",
       demoLink: "https://github.com/SayantanDutta95/Cardiac-USimage-Enhancement/blob/main/Restored_Cardiac_images/patient02_movie.gif"
