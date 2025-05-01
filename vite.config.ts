@@ -10,9 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // Add base config for GitHub Pages
-  // Change 'paper-paths-portfolio' to your repository name if different
-  base: mode === 'production' ? '/paper-paths-portfolio/' : '/',
+  // Update repository name from 'paper-paths-portfolio' to 'sayantandutta'
+  base: mode === 'production' ? '/sayantandutta/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
