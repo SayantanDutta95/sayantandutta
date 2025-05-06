@@ -41,8 +41,8 @@ const GoogleScholarMetrics: React.FC = () => {
         }
         
         // Updated citation and h-index values as requested
-        const citations = 228;
-        const hIndex = 10;
+        const citations = 230;
+        const hIndex = 9;
         
         const metrics = {
           citations,
@@ -60,8 +60,8 @@ const GoogleScholarMetrics: React.FC = () => {
       } catch (error) {
         console.error("Error fetching Google Scholar metrics:", error);
         setScholarMetrics({
-          citations: 228, // Updated fallback to known values
-          hIndex: 10,
+          citations: 230, // Updated fallback to known values
+          hIndex: 9,
           loading: false,
           error: true
         });
