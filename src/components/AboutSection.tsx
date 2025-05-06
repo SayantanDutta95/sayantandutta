@@ -48,7 +48,7 @@ const AboutSection: React.FC = () => {
         
         <div className="prose max-w-none mb-16 bg-blue-50 p-6 rounded-lg border border-blue-100 shadow-sm">
           <p className="text-gray-700 leading-relaxed">
-            Dr. Sayantan Dutta is a distinguished research scientist with expertise spanning the intersection of computational imaging, quantum computing, and artificial intelligence. Currently serving as a Senior AI Scientist at the Advanced Technology Group of GE HealthCare in Bangalore, India, he brings a rich multidisciplinary background to his innovative work in medical imaging.
+            Dr. Sayantan Dutta is a research scientist with expertise spanning the intersection of computational imaging, quantum computing, and artificial intelligence. Currently serving as a Senior AI Scientist at the Advanced Technology Group of GE HealthCare in Bangalore, India, he brings a rich multidisciplinary background to his innovative work in medical imaging.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Prior to his industry role, Dr. Dutta conducted postdoctoral research at the prestigious Weill Cornell Medicine, Cornell University in New York. He holds a Ph.D. from University Paul Sabatier Toulouse 3, France, reflecting his international academic training and collaborative approach.
@@ -57,7 +57,7 @@ const AboutSection: React.FC = () => {
             His research focuses on advancing the frontiers of computed tomography, quantitative acoustic microscopy, quantum computing applications, and deep learning architectures. Dr. Dutta has made significant contributions to quantum image processing and physics-inspired computational models, particularly in solving complex inverse problems.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            With numerous publications in high-impact journals and presentations at leading international conferences, he has established himself as a pioneer in developing quantum mechanics-inspired techniques for image restoration. His collaborative work with renowned institutions continues to shape the future of computational imaging.
+            With numerous publications in high-impact journals and presentations at leading international conferences, he has contributed significantly to the development of quantum mechanics-inspired techniques for image restoration. His ongoing collaborations with renowned institutions continue to support progress in the field of computational imaging.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Dr. Dutta remains dedicated to pushing boundaries in signal processing and medical imaging through innovative cross-disciplinary approaches that combine theoretical physics with practical healthcare applications.
