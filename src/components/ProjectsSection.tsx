@@ -41,7 +41,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "Medical Imaging",
       description: "Pushing the boundaries in medical imaging with advanced techniques aimed at enhancing cardiac ultrasound images for improved diagnostic capabilities. This research also explores innovative methods for reconstruction and restoration in computed tomography (CT) imaging, contributing to enhanced medical diagnostics.",
-      image: "https://github.com/SayantanDutta95/sayantandutta/blob/main/src/data/medical_mri.png",
+      image: "https://raw.githubusercontent.com/SayantanDutta95/sayantandutta/main/src/data/medical_mri.png",
       technologies: ["Python", "MATLAB", "Deep Learning", "3D Enhancement", "Ultrasound Imaging", "Tissue Analysis", "Motion in Medical Image", "CT Reconstruction", "Medical Diagnostics"],
       githubLink: "https://github.com/SayantanDutta95/Cardiac-USimage-Enhancement",
       demoLink: "https://github.com/SayantanDutta95/Cardiac-USimage-Enhancement/blob/main/Restored_Cardiac_images/patient02_movie.gif"
