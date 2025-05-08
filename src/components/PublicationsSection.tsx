@@ -20,10 +20,6 @@ const PublicationsSection: React.FC = () => {
         <h2 className="section-title">Publications</h2>
         
         <div className="mb-6 text-center">
-          <p className="text-lg mb-2">
-            Total: <span className="font-semibold">{journalCount}</span> Journal Papers and <span className="font-semibold">{conferenceCount}</span> Conference Papers
-          </p>
-          
           <div className="mt-4">
             <GoogleScholarMetrics />
           </div>
@@ -35,22 +31,22 @@ const PublicationsSection: React.FC = () => {
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-white shadow-md rounded-lg border border-gray-200">
+            <TabsList className="grid grid-cols-3 w-full max-w-md">
               <TabsTrigger 
                 value="journal" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
-                Journal Papers ({journalCount})
+                Journal ({journalCount})
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
                 Conference ({conferenceCount})
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
                 In Prep ({preparationCount})
               </TabsTrigger>
