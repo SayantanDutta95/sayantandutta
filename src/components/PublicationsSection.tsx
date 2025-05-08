@@ -20,6 +20,10 @@ const PublicationsSection: React.FC = () => {
         <h2 className="section-title">Publications</h2>
         
         <div className="mb-6 text-center">
+          <p className="text-lg mb-2">
+            Total: <span className="font-semibold">{journalCount}</span> Journal Papers and <span className="font-semibold">{conferenceCount}</span> Conference Papers
+          </p>
+          
           <div className="mt-4">
             <GoogleScholarMetrics />
           </div>
@@ -36,19 +40,19 @@ const PublicationsSection: React.FC = () => {
                 value="journal" 
                 className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
-                Journal ({journalCount})
+                Journal
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
                 className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
-                Conference ({conferenceCount})
+                Conference
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
                 className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
-                In Prep ({preparationCount})
+                In Prep
               </TabsTrigger>
             </TabsList>
           </div>
