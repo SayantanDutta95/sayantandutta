@@ -35,27 +35,27 @@ const PublicationsSection: React.FC = () => {
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-gradient-to-r from-blue-100 to-purple-100 shadow-lg rounded-xl border border-blue-200 p-1">
+            <TabsList className="grid grid-cols-3 w-full max-w-md bg-gradient-to-r from-blue-100 to-purple-100 shadow-lg rounded-xl border border-blue-200 p-1.5">
               <TabsTrigger 
                 value="journal" 
-                className="flex items-center justify-center gap-2 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2"
+                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
               >
-                <BookOpen size={18} strokeWidth={2} className="text-blue-600" />
-                <span>Journal Papers ({journalCount})</span>
+                <BookOpen size={20} className="text-blue-600" />
+                <span className="text-sm">Journal ({journalCount})</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="flex items-center justify-center gap-2 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2"
+                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
               >
-                <FileText size={18} strokeWidth={2} className="text-blue-600" />
-                <span>Conference ({conferenceCount})</span>
+                <FileText size={20} className="text-blue-600" />
+                <span className="text-sm">Conference ({conferenceCount})</span>
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="flex items-center justify-center gap-2 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2"
+                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
               >
-                <FileEdit size={18} strokeWidth={2} className="text-blue-600" />
-                <span>In Prep ({preparationCount})</span>
+                <FileEdit size={20} className="text-blue-600" />
+                <span className="text-sm">In Prep ({preparationCount})</span>
               </TabsTrigger>
             </TabsList>
           </div>
