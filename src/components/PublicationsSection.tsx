@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink, BookOpen, FileText, FileEdit } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { publications } from '@/data/publications';
@@ -35,27 +35,24 @@ const PublicationsSection: React.FC = () => {
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-gradient-to-r from-blue-100 to-purple-100 shadow-lg rounded-xl border border-blue-200 p-1.5">
+            <TabsList className="grid grid-cols-3 w-full max-w-md bg-white shadow-md rounded-lg border border-gray-200">
               <TabsTrigger 
                 value="journal" 
-                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
-                <BookOpen size={20} className="text-blue-600" />
-                <span className="text-sm">Journal ({journalCount})</span>
+                Journal Papers ({journalCount})
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
-                <FileText size={20} className="text-blue-600" />
-                <span className="text-sm">Conference ({conferenceCount})</span>
+                Conference ({conferenceCount})
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="flex flex-col items-center gap-1 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-md font-medium rounded-lg transition-all duration-200 py-2 px-1"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
-                <FileEdit size={20} className="text-blue-600" />
-                <span className="text-sm">In Prep ({preparationCount})</span>
+                In Prep ({preparationCount})
               </TabsTrigger>
             </TabsList>
           </div>

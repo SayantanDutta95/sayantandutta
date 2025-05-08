@@ -3,7 +3,6 @@ import React from 'react';
 import { TabsContent } from '@/components/ui/tabs';
 import PublicationCard from './PublicationCard';
 import { Publication } from '@/types/publication';
-import { BookOpen, FileText, FileEdit } from 'lucide-react';
 
 interface PublicationsTabContentProps {
   type: 'journal' | 'conference' | 'preparation';
@@ -17,15 +16,6 @@ const PublicationsTabContent: React.FC<PublicationsTabContentProps> = ({
   // Filter publications by type
   const filteredPublications = publications.filter(pub => pub.type === type);
   
-  const getIcon = () => {
-    switch(type) {
-      case 'journal': return <BookOpen size={24} className="text-blue-600 mb-4" />;
-      case 'conference': return <FileText size={24} className="text-blue-600 mb-4" />;
-      case 'preparation': return <FileEdit size={24} className="text-blue-600 mb-4" />;
-      default: return null;
-    }
-  };
-  
   const getHeading = () => {
     switch(type) {
       case 'journal': return 'Journal Publications';
@@ -38,7 +28,6 @@ const PublicationsTabContent: React.FC<PublicationsTabContentProps> = ({
   return (
     <TabsContent value={type} className="space-y-8 animate-in fade-in-50 duration-300">
       <div className="text-center mb-8">
-        {getIcon()}
         <h3 className="text-xl font-serif font-semibold text-gray-800">{getHeading()}</h3>
         <div className="w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></div>
       </div>
