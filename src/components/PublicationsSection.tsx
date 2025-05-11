@@ -35,22 +35,22 @@ const PublicationsSection: React.FC = () => {
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-white shadow-sm">
+            <TabsList className="grid grid-cols-3 w-full max-w-md">
               <TabsTrigger 
                 value="journal" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white font-medium transition-all duration-200 py-3 border-b-2 data-[state=active]:border-primary border-transparent"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
                 Journal
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white font-medium transition-all duration-200 py-3 border-b-2 data-[state=active]:border-primary border-transparent"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
                 Conference
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white font-medium transition-all duration-200 py-3 border-b-2 data-[state=active]:border-primary border-transparent"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
               >
                 In Prep
               </TabsTrigger>
