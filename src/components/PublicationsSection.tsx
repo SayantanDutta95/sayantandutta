@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink, Database } from 'lucide-react';
+import { ExternalLink, BookOpen, FileText, FileEdit } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { publications } from '@/data/publications';
@@ -30,28 +30,31 @@ const PublicationsSection: React.FC = () => {
         </div>
         
         <Tabs 
-          defaultValue="journal" 
-          className="w-full mt-8"
+          defaultValue="journals" 
+          className="w-full"
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md bg-white shadow-md rounded-lg overflow-hidden border border-gray-100">
+            <TabsList className="grid grid-cols-2 w-full max-w-md">
               <TabsTrigger 
-                value="journal" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
+                value="journals" 
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
               >
+                <BookOpen size={16} />
                 Journal
               </TabsTrigger>
               <TabsTrigger 
-                value="conference" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
+                value="conferences" 
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
               >
+                <FileText size={16} />
                 Conference
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
-              >
+                className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
+                >
+                <FileEdit size={16} />
                 In Prep
               </TabsTrigger>
             </TabsList>
