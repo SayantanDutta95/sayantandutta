@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -41,7 +40,7 @@ const GoogleScholarMetrics: React.FC = () => {
         }
         
         // Updated citation and h-index values as requested
-        const citations = 230;
+        const citations = 231;
         const hIndex = 9;
         
         const metrics = {
@@ -60,7 +59,7 @@ const GoogleScholarMetrics: React.FC = () => {
       } catch (error) {
         console.error("Error fetching Google Scholar metrics:", error);
         setScholarMetrics({
-          citations: 230, // Updated fallback to known values
+          citations: 231, // Updated fallback to known values
           hIndex: 9,
           loading: false,
           error: true

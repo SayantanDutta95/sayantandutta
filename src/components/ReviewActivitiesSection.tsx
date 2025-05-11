@@ -53,6 +53,13 @@ const ReviewActivitiesSection: React.FC = () => {
       topics: ["Seismic Signals", "Quantum-Based Signal Representation"]
     },
     {
+      journal: "IEEE Transactions on Medical Imaging",
+      role: "Reviewer",
+      year: " 2025",
+      papersReviewed: 1,
+      topics: ["CT Imaging", "Metal Artifact"]
+    },
+    {
       journal: "IEEE Signal Processing Letters",
       role: "Reviewer",
       year: "2023",
