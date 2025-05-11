@@ -30,21 +30,21 @@ const PublicationsSection: React.FC = () => {
         </div>
         
         <Tabs 
-          defaultValue="journals" 
+          defaultValue="journal" 
           className="w-full"
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 w-full max-w-md">
+            <TabsList className="grid grid-cols-3 w-full max-w-md">
               <TabsTrigger 
-                value="journals" 
+                value="journal" 
                 className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
               >
                 <BookOpen size={16} />
                 Journal
               </TabsTrigger>
               <TabsTrigger 
-                value="conferences" 
+                value="conference" 
                 className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
               >
                 <FileText size={16} />
@@ -53,7 +53,7 @@ const PublicationsSection: React.FC = () => {
               <TabsTrigger 
                 value="preparation" 
                 className="flex items-center gap-2 data-[state=active]:bg-primary data-[state=active]:text-white"
-                >
+              >
                 <FileEdit size={16} />
                 In Prep
               </TabsTrigger>
