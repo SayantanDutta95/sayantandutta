@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { publications } from '@/data/publications';
@@ -35,22 +35,22 @@ const PublicationsSection: React.FC = () => {
           onValueChange={setActiveTab}
         >
           <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-3 w-full max-w-md">
+            <TabsList className="grid grid-cols-3 w-full max-w-md bg-white shadow-md rounded-lg overflow-hidden border border-gray-100">
               <TabsTrigger 
                 value="journal" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
                 Journal
               </TabsTrigger>
               <TabsTrigger 
                 value="conference" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
                 Conference
               </TabsTrigger>
               <TabsTrigger 
                 value="preparation" 
-                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-2"
+                className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold font-medium transition-all duration-200 py-3"
               >
                 In Prep
               </TabsTrigger>

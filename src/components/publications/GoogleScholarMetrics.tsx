@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Quote } from 'lucide-react';
+import { Quote, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { GoogleScholarMetrics as GoogleScholarMetricsType } from '@/types/publication';
@@ -17,6 +17,10 @@ const GoogleScholarMetrics: React.FC = () => {
   useEffect(() => {
     const fetchGoogleScholarMetrics = async () => {
       try {
+        // Clear localStorage to ensure new values are used
+        localStorage.removeItem('googleScholarMetrics');
+        localStorage.removeItem('googleScholarMetricsLastUpdated');
+        
         // In a real implementation, this would be a proper API call
         // Since direct client-side scraping has CORS issues, we'll use a simulation
         // with occasional random variations to make it appear dynamic
@@ -40,7 +44,7 @@ const GoogleScholarMetrics: React.FC = () => {
           }
         }
         
-        // Updated citation and h-index values as requested
+        // Updated citation and h-index values
         const citations = 231;
         const hIndex = 9;
         
