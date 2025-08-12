@@ -18,11 +18,11 @@ export const journalPublications: Publication[] = [
     authors: "Amirreza Hashemi, Sayantan Dutta, Bertrand Georgeot, Denis Kouamé, Hamid Sabet",
     journal: "AIP Advances",
     year: "2025",
-    link: "#",
+    link: "https://doi.org/10.1063/5.0267924",
     tags: ["Quantum Localization", "Denoising", "Medical Imaging"],
     type: "journal",
-    volume: "#",
-    doi: "#"
+    volume: "vol. 15, no. 8, pp. 085012(1-12)",
+    doi: "10.1063/5.0267924"
   },
   {
     title: "A Quantum Denoising-Based Resolution Enhancement Framework for 250-MHz & 500-MHz Quantitative Acoustic Microscopy",
