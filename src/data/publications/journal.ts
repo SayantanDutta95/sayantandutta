@@ -1,7 +1,29 @@
 
 import { Publication } from "../../types/publication";
 
-export const journalPublications: Publication[] = [
+export const journalPublications: Publication[] = [ 
+  {
+    title: "Enhancing 3-D Radio Frequency Data in Quantitative Acoustic Microscopy Using Quantum-Driven Prior at 250 MHz and 500 MHz",
+    authors: "Sayantan Dutta, Jonathan Mamou",
+    journal: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+    year: "2025",
+    link: "https://ieeexplore.ieee.org/abstract/document/11021678",
+    tags: ["3D Radio-Frequency", "Acoustic Microscopy", "Quantum-Driven Prior"],
+    type: "journal",
+    volume: "vol. 72, no. 8, pp. 1119-1133",
+    doi: "10.1109/TUFFC.2025.3576239"
+  },
+  {
+    title: "A Novel Perspective on Denoising using Quantum Localization with Application to Medical Imaging",
+    authors: "Amirreza Hashemi, Sayantan Dutta, Bertrand Georgeot, Denis Kouamé, Hamid Sabet",
+    journal: "AIP Advances",
+    year: "2025",
+    link: "#",
+    tags: ["Quantum Localization", "Denoising", "Medical Imaging"],
+    type: "journal",
+    volume: "#",
+    doi: "#"
+  },
   {
     title: "A Quantum Denoising-Based Resolution Enhancement Framework for 250-MHz & 500-MHz Quantitative Acoustic Microscopy",
     authors: "Sayantan Dutta, Jonathan Mamou",
